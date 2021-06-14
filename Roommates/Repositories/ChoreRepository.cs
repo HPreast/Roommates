@@ -16,7 +16,7 @@ namespace Roommates.Repositories
 
                 using (SqlCommand cmd = conn.CreateCommand())
                 {
-                    cmd.CommandText = "SELECT Id, Name, FROM Chore";
+                    cmd.CommandText = "SELECT Id, Name FROM Chore";
 
                     SqlDataReader reader = cmd.ExecuteReader();
 
